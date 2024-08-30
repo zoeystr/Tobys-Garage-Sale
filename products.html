@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All products</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #logo{
+                position: static;
+                text-align: center;
+            }
+            #headmenu{
+                position: static;
+                padding-top: 10px;
+                height: 100px;
+                text-align: center;
+            }
+            #menubar{
+                position: static;
+                top: 50px;
+                left: 50px;
+            }
+            li{
+                    display: inline;
+                    padding: 20px;
+                    border: 2px solid gray;
+                    background-color: lightcoral;
+                }
+            li:hover{
+                background-color: gray;
+            }
+            body{
+                background-image: url("img/background2.jpg");
+                background-size: cover;
+            }
+            #bodybg{
+                position: static;
+                text-align: center;
+                background-color: white;
+                opacity: .2;
+            }
+            table{
+                align-content: center;
+                position: relative;
+                left: 25%
+            }
+            td{
+                position:static;
+                background-color: white;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                height: 230px;
+                width: 230px;
+            }
+            #footerpic{
+                position:static;
+                left: 5%;
+                bottom: 0%;
+                padding-top: 100px;
+            }
+            #footertext{
+                position:absolute;
+                text-align:right;
+                right: 3%;
+                background-color: rgba(255,255,255,.75);
+                height: 60px
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="logo">
+            <a href="home.html"><img src="img/logo.png" alt="logo" height="500" width="500"/></a>
+        </header>
+        <div id="headmenu">
+           <ul id="menubar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about_contact.html">About/Contact</a></li>
+           </ul> 
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/bed.jpg" alt="product" width='200' height='200'/>
+                    <p><a href="p1.html">Queen Bed (Sheets!)</a></p>
+                </td>
+                <td>
+                    <img src="img/wastebasket.jpg" alt="product" width='200' height='200'/>
+                    <p><a href="p2.html">Trash Can</a></p>
+                </td>
+                <td>
+                    <img src="img/shoes.jpg" alt="product" width='200' height='200'/>
+                    <p><a href="p3.html">Gray Converse High Tops</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/stroller.jpg" alt="product" width='200' height='200'/>
+                    <p><a href="p4.html">Stroller</a></p>
+                </td>
+                <td><img src="img/plate.jpg" alt="product" width='200' height='200'/>
+                    <p><a href="p5.html">Porcelain Plate</a></p>
+                    
+                </td>
+                <td>
+                    <img src="img/monopoly.jpg" alt="product" width='200' height='200'/>
+                    <p><a href="p6.html">Monopoly Board Game</a></p>
+                </td>
+            </tr>
+        </table>
+        <div id="footertext"><h6>Copyright 2022. Patent pending.</h6></div>
+        <div id="footerpic"><img src="img/logo.png" alt="footerlogo" width="100" height="100"></div>
+    </body>
+</html>
