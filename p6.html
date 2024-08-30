@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monopoly Board Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #logo{
+                position: static;
+                text-align: center;
+            }
+            #headmenu{
+                position: static;
+                padding-top: 10px;
+                height: 100px;
+                text-align: center;
+            }
+            #menubar{
+                position: static;
+                top: 50px;
+                left: 50px;
+            }
+            li{
+                    display: inline;
+                    padding: 20px;
+                    border: 2px solid gray;
+                    background-color: lightcoral;
+                }
+            li:hover{
+                background-color: gray;
+            }
+            body{
+                background-image: url("img/background2.jpg");
+                background-size: cover;
+            }
+            #bodybg{
+                position: relative;
+                text-align: center;
+                background-color: rgba(255,255,255,.75);
+                padding-top:20px;
+                padding-bottom:20px
+            }
+            /*above css is for every page */
+            #title_and_image{
+                width:900px;
+                height:300px;
+                margin-left: 10%;
+            }
+            #image{
+                position: absolute;
+                margin-left: 7%;
+            }
+            #title{
+                position: absolute;
+                margin-left: 30%
+            }
+            #price{
+                position: absolute;
+                margin-left: 50%
+            }
+            #product_description{
+                margin-left: 17%
+            }
+            #footerpic{
+                position:static;
+                left: 5%;
+                bottom: 0%;
+            }
+            #footertext{
+                position:absolute;
+                text-align:right;
+                right: 3%;
+                background-color: rgba(255,255,255,.75);
+                height: 60px
+            }
+        </style>
+    </head>
+    <body>
+        <header id="logo">
+            <a href="home.html"><img src="img/logo.png" alt="logo" height="500" width="500"/></a>
+        </header>
+        <div id="headmenu">
+           <ul id="menubar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about_contact.html">About/Contact</a></li>
+           </ul> 
+        </div>
+        <div id="bodybg">
+        <div id="title_and_image">
+            <div id="image"><img src="img/monopoly.jpg" width="300" height="300" alt="image"/></div>
+            <div id="title">
+                <h2>Monopoly Board Game</h2>
+                <button onclick="showSellerInfo()">Show seller info</button>
+                <p id="sellerInfo"></p>
+            </div>
+            <div id="price">
+                <h1>$14.99</h1>
+                <h3>Condition: Barely Used</h3>
+            </div>
+        </div>
+        <div id="product_description">
+            <h2>Product description:</h2>
+            <p>Dont like this game. Me and the wife fight too much when we play. And when we're not playing. Maybe you'll like it.</p>
+        </div>
+        </div>
+        <div id="footertext"><h6>Copyright 2022. Patent pending.</h6></div>
+        <div id="footerpic"><img src="img/logo.png" alt="footerlogo" width="100" height="100"></div>
+        <script>
+            function showSellerInfo(){
+                document.getElementById("sellerInfo").innerHTML = "Name: Jenkins Smalls<br/>Address: 444 Temporal ln Austin, TX<br/>Phone #: 222-222-9999<br/>Email: smalls@gmail.com<br/>";
+            }  
+        </script>
+    </body>
+</html>
